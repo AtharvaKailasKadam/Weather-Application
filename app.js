@@ -52,37 +52,24 @@ async function getFetchData(EndPoint , city)
 
 }
 
-function getWeatherIcon(id)
-{
-    if(id <= 232)
-    {
+function getWeatherIcon(id) {
+    if (id >= 200 && id <= 232) {
         return 'thunderstorm.svg';
-    }
-    else if(id <= 321)
-    {
+    } else if (id >= 300 && id <= 321) {
         return 'drizzle.svg';
-    }
-    else if(id <= 531)
-    {
+    } else if (id >= 500 && id <= 531) {
         return 'rain.svg';
-    }
-    else if(id <= 622)
-    {
+    } else if (id >= 600 && id <= 622) {
         return 'snow.svg';
-    }
-    else if(id <= 781)
-    {
+    } else if (id >= 701 && id <= 781) {
         return 'atmosphere.svg';
-    }
-    else if(id <= 800)
-    {
-        return 'clear.svg'
-    }
-    else
-    {
+    } else if (id === 800) {
+        return 'clear.svg';
+    } else if (id >= 801 && id <= 804) {
         return 'clouds.svg';
+    } else {
+        return 'unknown.svg'; // fallback icon
     }
-
 }
 
 async function updateWeatherInfo(city)
@@ -164,3 +151,5 @@ function showDisplaySection(section)
     .forEach(section => section.style.display = 'none');
     section.style.display = 'flex';
 };
+
+
