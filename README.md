@@ -100,9 +100,13 @@ Open index.html in your browser.
 Search any city and press Enter or click the search icon.
 
 🎨 UI/UX Highlights
+
 📱 Responsive layout
+
 🧊 Glassmorphism design with blur and rounded borders
+
 🌈 Animated background using gradient image
+
 ⌨️ Keyboard and mouse-friendly interactions
 
 🎥 Based On
@@ -110,16 +114,24 @@ This project is built by following the tutorial video from YouTube:
 📺 Weather App Tutorial by @OnlineTutorialsYT
 
 ⚠️ Notes
+
 Ensure internet connection is active for API fetches.
+
 Forecasts are timezone-sensitive and may not exactly match your local noon.
+
 API key must remain private in production environments (use .env or secured storage).
 
 🚀 Deployment
+
 This app is static and can be deployed easily on:
+
 GitHub Pages
+
 Netlify
+
 Vercel
 
 📬 Contact
+
 Atharva Kailas Kadam
 🔗 GitHub Profile AtharvaKailasKadam
