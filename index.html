@@ -21,7 +21,7 @@
             </button>
         </header>
 
-        <section class="weather-info">
+        <section class="weather-info" style = "display: none;">
             <div class="location-data-container">
                 <div class="location">
                     <span class="material-symbols-outlined">
@@ -61,9 +61,54 @@
                     </div>
                 </div>
             </div>
+
+            <div class="forecast-items-container">
+                <div class="forecast-item">
+                    <h5 class="forecast-item-date regular-txt">05 Aug</h5>
+                    <img src="assets/weather/thunderstorm.svg" class="forecast-item-img">
+                    <h5 class="forecast-item-temp">29 °C</h5>
+                </div>
+
+                <div class="forecast-item">
+                    <h5 class="forecast-item-date regular-txt">05 Aug</h5>
+                    <img src="assets/weather/thunderstorm.svg" class="forecast-item-img">
+                    <h5 class="forecast-item-temp">29 °C</h5>
+                </div>
+
+                <div class="forecast-item">
+                    <h5 class="forecast-item-date regular-txt">05 Aug</h5>
+                    <img src="assets/weather/thunderstorm.svg" class="forecast-item-img">
+                    <h5 class="forecast-item-temp">29 °C</h5>
+                </div>
+
+                <div class="forecast-item">
+                    <h5 class="forecast-item-date regular-txt">05 Aug</h5>
+                    <img src="assets/weather/thunderstorm.svg" class="forecast-item-img">
+                    <h5 class="forecast-item-temp">29 °C</h5>
+                </div>
+            </div>
+        </section>
+
+        <section class="search-city section-message">
+            <img class = "message-img" src = "assets/message/search-city.png">
+            <div>
+                <h1>Search City</h1>
+                <h4 class="regular-txt">
+                    Find Out The Weather Conditions of the City
+                </h4>
+            </div>
+        </section>
+
+        <section class="not-found section-message" style="display: none;">
+            <img src = "assets/message/not-found.png">
+            <div>
+                <h1>Search City</h1>
+                <h4 class="regular-txt">
+                    Find Out The Weather Conditions of the City
+                </h4>
+            </div>
         </section>
     </main>
-    
-    <script src = "app.js"></script>
+    <script src = "app.js" defer></script>
 </body>
 </html>

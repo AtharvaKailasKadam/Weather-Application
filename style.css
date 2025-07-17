@@ -31,8 +31,8 @@ body
 .main-container
 {
     border: solid;
-    width: 350px;
-    height: 550px;
+    width: 320px;
+    height: 500px;
     z-index: 1;
     background: rgba(0, 0, 0, 0.15);
     border-radius: 10px;
@@ -154,3 +154,73 @@ body
     align-items: center;
     gap:6px;
 }
+
+.condition-item span
+{
+    font-size: 35px;
+}
+
+.forecast-items-container
+{
+    display: flex;
+    gap: 15px;
+    overflow: scroll;
+    padding-bottom: 12px;
+}
+.forecast-items-container::-webkit-scrollbar
+{
+    height: 10px;
+}
+.forecast-items-container::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 99px;
+}
+
+.forecast-items-container::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 99px;
+}
+
+.forecast-item
+{
+    flex-direction: column;
+    display: flex;
+    min-width: 70px;
+    background: rgb(255, 255, 255, 0.15);
+    gap: 6px;
+    padding: 10px;
+    border-radius: 12px;
+    align-items: center;
+    transition: 0.3s background;
+}
+.forecast-item-img
+{
+    width: 35px;
+    height: 35px;
+}
+
+.forecast-item:hover
+{
+    background: rgb(255, 255, 255, 0.15);
+}
+
+/* Section of the Message */
+
+.section-message
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin-top: 25px;
+    justify-content: center;
+    gap: 10px;
+    height: 100%;
+}
+.section-message img
+{
+    height: 180px;
+    width: fit-content;
+}
+/* End of Section of the Message */
