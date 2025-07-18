@@ -18,6 +18,7 @@ const currentDataTxt = document.querySelector('.current-data-txt');
 
 const forecastItemsContainer = document.querySelector(".forecast-items-container");
 
+const CheckBox = document.querySelector('.checkbox');
 
 
 
@@ -152,4 +153,20 @@ function showDisplaySection(section)
     section.style.display = 'flex';
 };
 
-
+CheckBox.addEventListener('change',() =>{
+    if(!CheckBox.checked)
+    {
+        document.body.style.backgroundImage = "url('assets/nightbackground.jpg')";
+        document.body.style.background.filter= "blur(1px)";
+    }
+    else if(CheckBox.checked)
+    {
+        document.body.style.backgroundImage = "url('assets/background.jpg')";
+        document.body.style.background.filter= "blur(1px)";
+    }
+    else
+    {
+        document.body.style.backgroundImage = "url('assets/background.jpg')";
+        document.body.style.background.filter= "blur(1px)";
+    }
+})
