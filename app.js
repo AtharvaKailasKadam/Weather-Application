@@ -153,6 +153,9 @@ function showDisplaySection(section)
     section.style.display = 'flex';
 };
 
+// This is Just the Additional Part.
+// Night Mode CheckBox.
+
 CheckBox.addEventListener('change',() =>{
     if(!CheckBox.checked)
     {
